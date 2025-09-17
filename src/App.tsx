@@ -25,13 +25,14 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/stocks" element={<Stocks />} />
-          <Route path="/markets" element={<Markets />} />
-          <Route path="/currencies" element={<Currencies />} />
-          <Route path="/global" element={<Global />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/performance" element={<Performance />} />
-          <Route path="/analysis" element={<Analysis />} />
+          <Route path="/jobs" element={<Stocks />} />
+          <Route path="/equipment" element={<Markets />} />
+          <Route path="/inventory" element={<Currencies />} />
+          <Route path="/employees" element={<Global />} />
+          <Route path="/customers" element={<Portfolio />} />
+          <Route path="/finance" element={<Performance />} />
+          <Route path="/reports" element={<Analysis />} />
+          <Route path="/notifications" element={<Stocks />} />
           <Route path="/settings" element={<Settings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

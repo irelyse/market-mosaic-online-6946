@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { 
-  BarChart, PieChart, BarChart3, Wallet, LineChart, Globe, 
+  Wrench, Truck, Package, Users, UserCheck, Bell, FileText,
   DollarSign, Settings, ChevronRight, ChevronLeft, Home
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -31,39 +31,44 @@ export function Sidebar({ isCollapsed, onToggle, className }: SidebarProps) {
       href: '/',
     },
     {
-      title: 'Stocks',
-      icon: BarChart,
-      href: '/stocks',
+      title: 'Jobs',
+      icon: Wrench,
+      href: '/jobs',
     },
     {
-      title: 'Markets',
-      icon: BarChart3,
-      href: '/markets',
+      title: 'Equipment',
+      icon: Truck,
+      href: '/equipment',
     },
     {
-      title: 'Currencies',
+      title: 'Inventory',
+      icon: Package,
+      href: '/inventory',
+    },
+    {
+      title: 'Employees',
+      icon: Users,
+      href: '/employees',
+    },
+    {
+      title: 'Customers',
+      icon: UserCheck,
+      href: '/customers',
+    },
+    {
+      title: 'Finance',
       icon: DollarSign,
-      href: '/currencies',
+      href: '/finance',
     },
     {
-      title: 'Global',
-      icon: Globe,
-      href: '/global',
+      title: 'Reports',
+      icon: FileText,
+      href: '/reports',
     },
     {
-      title: 'Portfolio',
-      icon: Wallet,
-      href: '/portfolio',
-    },
-    {
-      title: 'Performance',
-      icon: LineChart,
-      href: '/performance',
-    },
-    {
-      title: 'Analysis',
-      icon: PieChart,
-      href: '/analysis',
+      title: 'Notifications',
+      icon: Bell,
+      href: '/notifications',
     },
     {
       title: 'Settings',
@@ -83,7 +88,7 @@ export function Sidebar({ isCollapsed, onToggle, className }: SidebarProps) {
           "font-semibold tracking-tight transition-opacity duration-200",
           isCollapsed ? "opacity-0" : "opacity-100"
         )}>
-          MarketPulse
+          Twiyubake
         </h2>
         
         <Button
@@ -131,9 +136,9 @@ export function Sidebar({ isCollapsed, onToggle, className }: SidebarProps) {
           "transition-opacity duration-200 rounded-md bg-sidebar-accent/50 p-2 text-xs text-sidebar-accent-foreground",
           isCollapsed ? "opacity-0" : "opacity-100"
         )}>
-          <p className="font-medium">Market Status</p>
-          <p>Markets are open</p>
-          <p className="text-[10px]">Closes in 3h 45m</p>
+          <p className="font-medium">System Status</p>
+          <p>All systems operational</p>
+          <p className="text-[10px]">24 active jobs</p>
         </div>
       </div>
     </aside>
